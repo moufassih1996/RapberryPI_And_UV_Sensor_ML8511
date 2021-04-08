@@ -1,3 +1,5 @@
+
+
 from time import sleep
 import board
 import busio
@@ -7,7 +9,7 @@ from adafruit_ads1x15.analog_in import AnalogIn
 try:
     i2c = busio.I2C(board.SCL, board.SDA)
     ads = ADS.ADS1115(i2c)
-    chan = AnalogIn(ads, ADS.P2)
+    chan = AnalogIn(ads, ADS.P0)
 except:
     pass
 
